@@ -5,15 +5,14 @@ This project automates the process of searching Web Dev courses in coursera, sto
 
 * Selenium WebDriver (Java)
 * Data-Driven Framework
+* Properties file (to store and retrieve global properties)
 * POM (Page Object Model)
 * Utilities like DateUtils, ExtentReportManager, ExcelUtils (I/O), TestDataProvider etc.
-* Properties file (to store and retrieve global properties)
-* Exception handling
 * HTML report generation and logging using reporting methods
+* Exception handling (to efficiently log and identify errors)
+* Capturing screenshots on failure
 * Smoke and regression suites using TestNG
-* Parallel execution in each suite using TestNG
+* Parallel execution in Chrome, Opera and Firefox for each suite using TestNG
 * Grouping and DataProvider concepts using TestNG
 * User defined waits using JavascriptExecutor
-* Capturing screenshots on failure
-* MAVEN build tool to manage dependencies
-* Execution in Chrome, Opera and Firefox
+* MAVEN build tool to manage dependencies and plugins
