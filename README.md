@@ -15,5 +15,6 @@ This project automates the process of searching Web Dev courses in coursera, sto
 * Smoke and regression suites using TestNG
 * Parallel execution in Chrome, Opera and Firefox for each suite using TestNG
 * Grouping and DataProvider concepts using TestNG
+* Running multiple suites using a single suite file in TestNG
 * User defined waits using JavascriptExecutor
 * MAVEN build tool to manage dependencies and plugins
