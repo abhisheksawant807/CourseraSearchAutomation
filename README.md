@@ -11,6 +11,7 @@ This project automates the process of searching Web Dev courses in coursera, sto
 * HTML report generation and logging using reporting methods
 * Exception handling (to efficiently log and identify errors)
 * Capturing screenshots on failure
+* TestNG Annotations
 * Smoke and regression suites using TestNG
 * Parallel execution in Chrome, Opera and Firefox for each suite using TestNG
 * Grouping and DataProvider concepts using TestNG
