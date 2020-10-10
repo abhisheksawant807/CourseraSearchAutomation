@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke suite]">
+  <test thread-count="5" name="Identify Courses in Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCases.IdentifyCoursesTest">
+        <methods>
+          <include name="searchTest"/>
+          <include name="loadProperties"/>
+          <include name="quitBrowser"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- TestCases.IdentifyCoursesTest -->
+    </classes>
+  </test> <!-- Identify Courses in Chrome(failed) -->
+  <test thread-count="5" name="Identify Courses in Opera(failed)">
+    <parameter name="browser" value="Opera"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCases.IdentifyCoursesTest">
+        <methods>
+          <include name="searchTest"/>
+          <include name="loadProperties"/>
+          <include name="quitBrowser"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- TestCases.IdentifyCoursesTest -->
+    </classes>
+  </test> <!-- Identify Courses in Opera(failed) -->
+  <test thread-count="5" name="Identify Courses in Firefox(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCases.IdentifyCoursesTest">
+        <methods>
+          <include name="searchTest"/>
+          <include name="loadProperties"/>
+          <include name="quitBrowser"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- TestCases.IdentifyCoursesTest -->
+    </classes>
+  </test> <!-- Identify Courses in Firefox(failed) -->
+</suite> <!-- Failed suite [Smoke suite] -->

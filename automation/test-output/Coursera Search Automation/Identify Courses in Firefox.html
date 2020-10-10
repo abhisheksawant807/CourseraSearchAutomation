@@ -1,0 +1,425 @@
+<html>
+<head>
+<title>TestNG:  Identify Courses in Firefox</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Identify Courses in Firefox</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 01 14:44:41 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>730 seconds (730409 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=987-65}</td>
+<td><div><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace536436365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace536436365'><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at org.testng.Assert.fail(Assert.java:96)
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>18</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=((((}</td>
+<td><div><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1671716333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1671716333'><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at org.testng.Assert.fail(Assert.java:96)
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>63</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=))))}</td>
+<td><div><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1474518203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1474518203'><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at org.testng.Assert.fail(Assert.java:96)
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>19</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=98----}</td>
+<td><div><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace28757189", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace28757189'><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at org.testng.Assert.fail(Assert.java:96)
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=76++}</td>
+<td><div><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace693979808", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace693979808'><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at org.testng.Assert.fail(Assert.java:96)
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>184</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=54...}</td>
+<td><div><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace322568073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace322568073'><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at org.testng.Assert.fail(Assert.java:96)
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=(321)-+.}</td>
+<td><div><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace843768649", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace843768649'><pre>java.lang.AssertionError: Error message NOT displayed, which is a failure!
+	at org.testng.Assert.fail(Assert.java:96)
+	at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:161)
+	at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:89)
+	at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:61)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>16</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Empty FirstName, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=___, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}</td>
+<td></td>
+<td>22</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Empty LastName, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=___, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}</td>
+<td></td>
+<td>25</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Empty Email, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=___, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}</td>
+<td></td>
+<td>22</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Invalid Email, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=abcd, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}</td>
+<td></td>
+<td>22</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Empty JobTitle, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=___, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}</td>
+<td></td>
+<td>22</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Empty PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=___}</td>
+<td></td>
+<td>17</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=Empty InstitutionName, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=___, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}</td>
+<td></td>
+<td>12</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=No selection in InstitutionType, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=___, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}</td>
+<td></td>
+<td>14</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=No selection in InstitutionStrength, InstitutionStrength=___, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}</td>
+<td></td>
+<td>12</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=No selection in CourseraUsersCount, InstitutionStrength=1001-5000, CourseraUsersCount=___, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}</td>
+<td></td>
+<td>14</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=No selection in Country, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=___, Country=___, PhoneNo=987-654-3210}</td>
+<td></td>
+<td>19</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.formTest()'><b>formTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: {Comment=No selection in State, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Private University, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Sawant, InstitutionName=VIT Vellore, FirstName=Abhishek, State=___, Country=India, PhoneNo=987-654-3210}</td>
+<td></td>
+<td>14</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+<tr>
+<td title='TestCases.IdentifyCoursesTest.searchTest()'><b>searchTest</b><br>Test class: TestCases.IdentifyCoursesTest<br>Parameters: Firefox</td>
+<td></td>
+<td>170</td>
+<td>TestCases.IdentifyCoursesTest@be64738</td></tr>
+</table><p>
+</body>
+</html>

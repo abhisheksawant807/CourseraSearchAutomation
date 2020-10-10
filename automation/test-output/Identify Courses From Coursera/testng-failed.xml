@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Identify Courses From Coursera]">
+  <test thread-count="5" name="Opera Test(failed)">
+    <classes>
+      <class name="TestCases.IdentifyCoursesOperaTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="automateTest"/>
+        </methods>
+      </class> <!-- TestCases.IdentifyCoursesOperaTest -->
+    </classes>
+  </test> <!-- Opera Test(failed) -->
+  <test thread-count="5" name="Firefox Test(failed)">
+    <classes>
+      <class name="TestCases.IdentifyCoursesFirefoxTest">
+        <methods>
+          <include name="automateTest"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- TestCases.IdentifyCoursesFirefoxTest -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Identify Courses From Coursera] -->

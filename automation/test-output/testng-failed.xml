@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression suite]" parallel="tests">
+  <test thread-count="5" name="Identify Courses in Opera(failed)" parallel="tests">
+    <parameter name="browser" value="Opera"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCases.IdentifyCoursesTest">
+        <methods>
+          <include name="loadProperties"/>
+          <include name="quitBrowser"/>
+          <include name="formTest" invocation-numbers="6 7 8 9 10 11 12"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- TestCases.IdentifyCoursesTest -->
+    </classes>
+  </test> <!-- Identify Courses in Opera(failed) -->
+  <test thread-count="5" name="Identify Courses in Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCases.IdentifyCoursesTest">
+        <methods>
+          <include name="loadProperties"/>
+          <include name="quitBrowser"/>
+          <include name="formTest" invocation-numbers="6 7 8 9 10 11 12"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- TestCases.IdentifyCoursesTest -->
+    </classes>
+  </test> <!-- Identify Courses in Chrome(failed) -->
+  <test thread-count="5" name="Identify Courses in Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCases.IdentifyCoursesTest">
+        <methods>
+          <include name="loadProperties"/>
+          <include name="quitBrowser"/>
+          <include name="formTest" invocation-numbers="6 7 8 9 10 11 12"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- TestCases.IdentifyCoursesTest -->
+    </classes>
+  </test> <!-- Identify Courses in Firefox(failed) -->
+</suite> <!-- Failed suite [Regression suite] -->

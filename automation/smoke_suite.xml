@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke suite" parallel="tests">
+	<test name="Identify Courses in Chrome">
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="TestCases.IdentifyCoursesTest" />
+		</classes>
+	</test>
+	<test name="Identify Courses in Opera">
+		<parameter name="browser" value="Opera"></parameter>
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="TestCases.IdentifyCoursesTest" />
+		</classes>
+	</test>
+	<test name="Identify Courses in Firefox">
+		<parameter name="browser" value="Firefox"></parameter>
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="TestCases.IdentifyCoursesTest" />
+		</classes>
+	</test>
+</suite>
