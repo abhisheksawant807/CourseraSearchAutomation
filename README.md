@@ -7,7 +7,7 @@ This project automates the process of searching Web Dev courses in coursera, sto
 * Data-Driven Framework
 * POM (Page Object Model)
 * Utilities like DateUtils, ExtentReportManager, ExcelUtils (I/O), TestDataProvider etc.
-* Properties file (to store global properties)
+* Properties file (to store and retrieve global properties)
 * Exception handling
 * HTML report generation and logging using reporting methods
 * Smoke and regression suites using TestNG
