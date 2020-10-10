@@ -3,7 +3,7 @@ This project automates the search of Web Dev courses in coursera, storing the va
 
 #Technologies used:-
 
-* Selenium WebDriver
+* Selenium WebDriver (JAVA)
 * Data-Driven Framework
 * POM (Page Object Model)
 * Utilities like DateUtils, ExtentReportManager, Read and write excel files, TestDataProvider etc.
