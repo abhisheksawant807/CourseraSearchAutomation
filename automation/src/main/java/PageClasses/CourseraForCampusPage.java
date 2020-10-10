@@ -63,15 +63,14 @@ public class CourseraForCampusPage extends PageBaseClass {
 
 	public void openFormMsgOutputFile() {
 		outputFilePath = userDir + prop.getProperty("errorMsgFileRelPath");
-//		if (driver instanceof ChromeDriver) {
-//			writer = new WriteTestOutput(outputFilePath, "ChromeOutput");
-//		} else if (driver instanceof FirefoxDriver) {
-//			writer = new WriteTestOutput(outputFilePath, "FirefoxOutput");
-//		} else {
-//			writer = new WriteTestOutput(outputFilePath, "OperaOutput");
-//		}
-		
-		writer = new WriteTestOutput(outputFilePath, "ConcurrentOutput");
+		if (driver instanceof ChromeDriver) {
+			writer = new WriteTestOutput(outputFilePath, "ChromeOutput");
+		} else if (driver instanceof FirefoxDriver) {
+			writer = new WriteTestOutput(outputFilePath, "FirefoxOutput");
+		} else {
+			writer = new WriteTestOutput(outputFilePath, "OperaOutput");
+		}
+
 	}
 
 	public void fillAndSubmitForm(Hashtable<String, String> dataTable) {
