@@ -105,24 +105,28 @@ public class BaseTestClass {
 				driver = new InternetExplorerDriver();
 			}
 
-			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); //Implicit timeout
+			driver.manage().window().maximize(); // Maximises the browser window
 
 		} catch (Exception e) {
-			reportFail(e.getMessage());
+			// Performing the necessary actions upon the detection of an exception or error
+			reportFail(e.getMessage()); 
 		}
 	}
 
 	
 	@AfterTest(alwaysRun = true)
 	public void quitBrowser() {
-		driver.quit();
+		driver.quit(); // Closes the current browser
 	}
 
 	@AfterSuite(alwaysRun = true)
 	public void endReport() {
-		report.flush();
-		userDir = null;
+		report.flush(); // Flushes the html report
+		
+		// Assigning null values to these static variables after the test completion
+		// to prevent data leakage
+		userDir = null; 
 		prop = null;
 		driverDir = null;
 	}
@@ -131,55 +135,55 @@ public class BaseTestClass {
 	/************** Basic driver methods *************/
 	public void switchToWindow(String windowHandle) {
 		try {
-			driver.switchTo().window(windowHandle);
-			firefoxWait(2);
-			waitForPageLoad();
+			driver.switchTo().window(windowHandle); // Switching to a different window
+			firefoxWait(2); // Timeout for Firefox
+			waitForPageLoad(); // Page Load Timeout
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
 	}
 
 	public void navigateTo(String url) {
-		driver.navigate().to(url);
+		driver.navigate().to(url); // Navigating to a specific URL
 		firefoxWait(1);
 		waitForPageLoad();
 	}
 
 	public void openURL(String url) {
-		driver.get(url);
+		driver.get(url); // Opening a specific webpage
 		firefoxWait(1);
 		waitForPageLoad();
 	}
 
 	public void refreshPage() {
-		driver.navigate().refresh();
+		driver.navigate().refresh(); // Refreshing the page 
 		firefoxWait(1);
 		waitForPageLoad();
 	}
 
 	public void goBack() {
-		driver.navigate().back();
+		driver.navigate().back(); // Navigating back to previous page
 		firefoxWait(1);
 		waitForPageLoad();
 	}
 
 	public void closeWindow() {
-		driver.close();
+		driver.close(); // Closes the current window of current browser
 	}
 
 	/****************** Reporting Functions ***********************/
 	public void reportFail(String reportString) {
-		takeScreenShotOnFailure();
-		logger.log(Status.FAIL, reportString);
-		Assert.fail(reportString);
+		takeScreenShotOnFailure(); // Takes screenshot upon an exception
+		logger.log(Status.FAIL, reportString); // Logs the exception or error in the html report
+		Assert.fail(reportString); // Terminates test execution and displays the error in console
 	}
 
 	public void reportPass(String reportString) {
-		logger.log(Status.PASS, reportString);
+		logger.log(Status.PASS, reportString); // Logs a 'passed' action in the html report
 	}
 
 	public void reportInfo(String reportString) {
-		logger.log(Status.INFO, reportString);
+		logger.log(Status.INFO, reportString); // Logs specific info regarding an action in html report
 	}
 
 	/****************** Capture Screen Shot ***********************/
@@ -247,6 +251,7 @@ public class BaseTestClass {
 		}
 	}
 
+	// User defined wait for each WebElement
 	public void waitForElement(WebElement element) {
 		while (!isFresh(element)) {
 			continue;
@@ -259,12 +264,14 @@ public class BaseTestClass {
 		}
 	}
 
+	// User defined wait for each WebElement List
 	public void waitForElements(List<WebElement> list) {
 		for (WebElement element : list) {
 			waitForElement(element);
 		}
 	}
 
+	// Hardcoded wait
 	public void waitFor(double i) {
 		try {
 			Thread.sleep((long) (i * 1000));

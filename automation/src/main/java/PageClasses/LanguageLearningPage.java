@@ -7,21 +7,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.aventstack.extentreports.ExtentTest;
-
 import BaseClasses.PageBaseClass;
-import Utilities.WriteTestOutput;
+import Utilities.ExcelUtils;
 
 public class LanguageLearningPage extends PageBaseClass {
 
 	public String outputFilePath;
-	public WriteTestOutput writer;
+	public ExcelUtils writer;
 
+	// Initialising the driver and logger by passing them to the parent constructor
 	public LanguageLearningPage(WebDriver driver, ExtentTest logger) {
 		super(driver, logger);
 	}
 
+	// These @FindBy annotations are used to locate specific WebElements of specific
+	// webpages
 	@FindBy(css = "button:nth-child(5) > span")
 	public WebElement languageDropDownButton;
 
@@ -35,41 +36,49 @@ public class LanguageLearningPage extends PageBaseClass {
 	public List<WebElement> levelList;
 
 	public void openOutputFileSheet() {
+		// Initialising the 'outputFilePath'
 		outputFilePath = userDir + prop.getProperty("languageLearningFileRelPath");
+
+		// Initialising the writer object by selecting a browser specific sheet
 		if (driver instanceof ChromeDriver) {
-			writer = new WriteTestOutput(outputFilePath, "ChromeOutput");
+			writer = new ExcelUtils(outputFilePath, "ChromeOutput");
 		} else if (driver instanceof FirefoxDriver) {
-			writer = new WriteTestOutput(outputFilePath, "FirefoxOutput");
+			writer = new ExcelUtils(outputFilePath, "FirefoxOutput");
 		} else {
-			writer = new WriteTestOutput(outputFilePath, "OperaOutput");
+			writer = new ExcelUtils(outputFilePath, "OperaOutput");
 		}
 	}
-	
+
 	public void storeLanguagesWithCount() {
 		try {
+			// Clicking the specific button
 			elementClick(languageDropDownButton, "Language Dropdown Button");
 			reportInfo("Storing all the Languages with their respective counts in an Excel file...");
 
-			waitForElements(languageList);
-			int index = 0;
+			waitForElements(languageList); // Waiting for 'languageList' elements
+			int index = 0; // Initialising 'index' for language entries
 			for (WebElement language : languageList) {
 				waitForElement(language);
 				String languageData = language.getText();
-				int rowNum = index + 2;
+				int rowNum = index + 2; // Updating 'rowNum' value
+				// Retrieving the last index of '(' and ')' in the 'languageData' string
 				int openingBracketIndex = languageData.lastIndexOf("(");
 				int closingBracketIndex = languageData.lastIndexOf(")");
-				
+
+				// Writing the language no., lanuage name, and language count
 				writer.setCellData(1, "Language no.", rowNum, Integer.toString(++index));
 				writer.setCellData(1, "Language", rowNum, languageData.substring(0, openingBracketIndex).trim());
 				writer.setCellData(1, "Language Count", rowNum,
 						languageData.substring(openingBracketIndex + 1, closingBracketIndex).trim());
 			}
+			// Logging the successful writing of the language details in excel file
 			reportPass("Successfully stored all the Languages with their respective counts in an Excel file!");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
 	}
 
+	// Similar to the above method (languages replaced by levels)
 	public void storeLevelsWithCount() {
 		try {
 			elementClick(levelDropDownButton, "Level Dropdown Button");
@@ -83,7 +92,7 @@ public class LanguageLearningPage extends PageBaseClass {
 				int rowNum = index + 2;
 				int openingBracketIndex = levelData.lastIndexOf("(");
 				int closingBracketIndex = levelData.lastIndexOf(")");
-				
+
 				writer.setCellData(1, "Level no.", rowNum, Integer.toString(++index));
 				writer.setCellData(1, "Level", rowNum, levelData.substring(0, openingBracketIndex).trim());
 				writer.setCellData(1, "Level Count", rowNum,

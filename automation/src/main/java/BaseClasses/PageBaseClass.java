@@ -30,17 +30,20 @@ public class PageBaseClass extends BaseTestClass {
 	/****************** OpenApplication ***********************/
 	public HomePage openApplication() {
 		try {
+			// Assigning global properties from 'Config.properties' file
 			homePageURL = prop.getProperty("homePageURL");
 			homePageTitle = prop.getProperty("homePageTitle");
 			newHomePageTitle = prop.getProperty("newHomePageTitle");
 			
 			reportInfo("Opening the COURSERA Website...");
-			openURL(homePageURL);
-			disableInfobar();
+			openURL(homePageURL); // Opening coursera.org
+			disableInfobar(); // Disabling infobar in Opera
 
+			// Verifying Home page title
 			verifyPageTitle(homePageTitle, newHomePageTitle);
 			reportPass("Successfully Opened COURSERA!");
 
+			// Creating a new HomePage object, initialising the driver and logger, and returning the object
 			HomePage homePage = new HomePage(driver, logger);
 			PageFactory.initElements(driver, homePage);
 			return homePage;
@@ -53,12 +56,17 @@ public class PageBaseClass extends BaseTestClass {
 	/****************** Enter Text ***********************/
 	public void enterText(WebElement element, String elementName, String data) {
 		try {
-			waitForElement(element);
+			// Waiting for the element to prevent 'NoSuchElementException' 
+			// or 'StaleElementReferenceException'
+			waitForElement(element); 
 			if (data.equals("___")) {
+				// Logging the blank status of an element
 				reportInfo(elementName + " : This field has been deliberately kept blank!");
 				return;
 			}
-			element.sendKeys(data);
+			element.sendKeys(data);  // Entering text in the element
+			
+			// Logging the successful text entry in the element
 			reportPass(data + " - Entered successfully in Element : " + elementName);
 		} catch (Exception e) {
 			reportFail(e.getMessage());
@@ -70,7 +78,9 @@ public class PageBaseClass extends BaseTestClass {
 		try {
 			waitForPageLoad();
 			waitForElement(element);
-			element.click();
+			element.click(); // Clicking the element
+			
+			// Logging the successful click of the element
 			reportPass(elementName + " : Element Clicked Successfully!");
 			waitForPageLoad();
 		} catch (Exception e) {
@@ -81,13 +91,15 @@ public class PageBaseClass extends BaseTestClass {
 	/****************** Select Item in List Drop Down ******************/
 	public void selectElementInList(List<WebElement> elementList, String Value) {
 		try {
-			waitForElements(elementList);
+			waitForElements(elementList); // Waiting for the WebElement List
 			for (WebElement listItem : elementList) {
 				if (listItem.getText().trim().equalsIgnoreCase(Value)) {
-					elementClick(listItem, "Suggestion Box option");
+					// Selecting the matched listItem
+					elementClick(listItem, "Suggestion Box option"); 
 					break;
 				}
 			}
+			//Logging the successful selection of the value
 			reportPass("Selected the Defined Value : " + Value);
 		} catch (Exception e) {
 			reportFail(e.getMessage());
@@ -103,7 +115,9 @@ public class PageBaseClass extends BaseTestClass {
 				reportInfo(elementName + " : This field has been deliberately kept blank!");
 				return;
 			}
-			select.selectByVisibleText(value);
+			select.selectByVisibleText(value); // Selecting the specific option
+			
+			// Logging the successful selection of a specific option
 			reportPass("Selected the value : " + value + " from the select element : " + elementName);
 			waitForPageLoad();
 		} catch (Exception e) {
@@ -114,10 +128,14 @@ public class PageBaseClass extends BaseTestClass {
 	/****************** Verify Page Title ***********************/
 	public void verifyPageTitle(String expectedTitle) {
 		try {
-			firefoxWait(2);
+			// Intentional wait for to prevent 'AssertionError' in Firefox
+			firefoxWait(2); 
 			waitForPageLoad();
 			String actualTitle = driver.getTitle();
+			
+			// Checking the actual title with the expected title
 			Assert.assertEquals(actualTitle, expectedTitle);
+			// Logging the successful match of actual and expected titles
 			reportPass("Actual Title : " + actualTitle + " - equals to Expected Title : " + expectedTitle);
 			waitForPageLoad();
 		} catch (AssertionError e) {
@@ -125,6 +143,7 @@ public class PageBaseClass extends BaseTestClass {
 		}
 	}
 	
+	// Overloaded method for verifying HomePageTitle (due to dynamic title of coursera homepage)
 	public void verifyPageTitle(String expectedTitle1, String expectedTitle2) {
 		try {
 			firefoxWait(2);

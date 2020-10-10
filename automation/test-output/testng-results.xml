@@ -1,478 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="21" ignored="0" total="60" passed="39">
+<testng-results skipped="0" failed="7" ignored="0" total="20" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression suite" duration-ms="550167" started-at="2020-10-05T07:54:54Z" finished-at="2020-10-05T08:04:04Z">
+  <suite name="Regression suite" duration-ms="291609" started-at="2020-10-10T14:21:51Z" finished-at="2020-10-10T14:26:43Z">
     <groups>
       <group name="regression">
-        <method signature="IdentifyCoursesTest.formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" class="TestCases.IdentifyCoursesTest"/>
-        <method signature="IdentifyCoursesTest.searchTest(java.lang.String)[pri:0, instance:TestCases.IdentifyCoursesTest@239963d8]" name="searchTest" class="TestCases.IdentifyCoursesTest"/>
-        <method signature="IdentifyCoursesTest.formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" class="TestCases.IdentifyCoursesTest"/>
-        <method signature="IdentifyCoursesTest.searchTest(java.lang.String)[pri:0, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="searchTest" class="TestCases.IdentifyCoursesTest"/>
-        <method signature="IdentifyCoursesTest.formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" class="TestCases.IdentifyCoursesTest"/>
-        <method signature="IdentifyCoursesTest.searchTest(java.lang.String)[pri:0, instance:TestCases.IdentifyCoursesTest@6adede5]" name="searchTest" class="TestCases.IdentifyCoursesTest"/>
+        <method signature="IdentifyCoursesTest.formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" class="TestCases.IdentifyCoursesTest"/>
+        <method signature="IdentifyCoursesTest.searchTest(java.lang.String)[pri:0, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="searchTest" class="TestCases.IdentifyCoursesTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="IdentifyCoursesTest.searchTest(java.lang.String)[pri:0, instance:TestCases.IdentifyCoursesTest@239963d8]" name="searchTest" class="TestCases.IdentifyCoursesTest"/>
-        <method signature="IdentifyCoursesTest.searchTest(java.lang.String)[pri:0, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="searchTest" class="TestCases.IdentifyCoursesTest"/>
-        <method signature="IdentifyCoursesTest.searchTest(java.lang.String)[pri:0, instance:TestCases.IdentifyCoursesTest@6adede5]" name="searchTest" class="TestCases.IdentifyCoursesTest"/>
+        <method signature="IdentifyCoursesTest.searchTest(java.lang.String)[pri:0, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="searchTest" class="TestCases.IdentifyCoursesTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Identify Courses in Opera" duration-ms="444808" started-at="2020-10-05T07:54:54Z" finished-at="2020-10-05T08:02:19Z">
+    <test name="Identify Courses in Chrome" duration-ms="291609" started-at="2020-10-10T14:21:51Z" finished-at="2020-10-10T14:26:43Z">
       <class name="TestCases.IdentifyCoursesTest">
-        <test-method status="PASS" signature="searchTest(java.lang.String)[pri:0, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="searchTest" duration-ms="117921" started-at="2020-10-05T07:54:54Z" finished-at="2020-10-05T07:56:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Opera]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="loadProperties()[pri:0, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="loadProperties" is-config="true" duration-ms="371" started-at="2020-10-10T14:21:51Z" finished-at="2020-10-10T14:21:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="19151" started-at="2020-10-05T07:56:52Z" data-provider="getData" finished-at="2020-10-05T07:57:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Empty FirstName, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=___, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="12409" started-at="2020-10-05T07:57:11Z" data-provider="getData" finished-at="2020-10-05T07:57:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Empty LastName, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=___, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="21751" started-at="2020-10-05T07:57:23Z" data-provider="getData" finished-at="2020-10-05T07:57:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Empty Email, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=___, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="21489" started-at="2020-10-05T07:57:45Z" data-provider="getData" finished-at="2020-10-05T07:58:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid Email, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=abcd, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="13513" started-at="2020-10-05T07:58:07Z" data-provider="getData" finished-at="2020-10-05T07:58:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Empty JobTitle, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=___, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="10897" started-at="2020-10-05T07:58:20Z" data-provider="getData" finished-at="2020-10-05T07:58:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Empty PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=___}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="27326" started-at="2020-10-05T07:58:31Z" data-provider="getData" finished-at="2020-10-05T07:58:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-65}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="17156" started-at="2020-10-05T07:58:58Z" data-provider="getData" finished-at="2020-10-05T07:59:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=((((}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="19793" started-at="2020-10-05T07:59:16Z" data-provider="getData" finished-at="2020-10-05T07:59:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=))))}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="16663" started-at="2020-10-05T07:59:35Z" data-provider="getData" finished-at="2020-10-05T07:59:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=98----}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="15474" started-at="2020-10-05T07:59:52Z" data-provider="getData" finished-at="2020-10-05T08:00:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=76++}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="31331" started-at="2020-10-05T08:00:08Z" data-provider="getData" finished-at="2020-10-05T08:00:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=54...}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="15074" started-at="2020-10-05T08:00:39Z" data-provider="getData" finished-at="2020-10-05T08:00:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=(321)-+.}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="11689" started-at="2020-10-05T08:00:54Z" data-provider="getData" finished-at="2020-10-05T08:01:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Empty InstitutionName, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=___, FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="10886" started-at="2020-10-05T08:01:06Z" data-provider="getData" finished-at="2020-10-05T08:01:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=No selection in InstitutionType, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=___, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="10630" started-at="2020-10-05T08:01:17Z" data-provider="getData" finished-at="2020-10-05T08:01:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=No selection in InstitutionStrength, InstitutionStrength=___, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="15102" started-at="2020-10-05T08:01:27Z" data-provider="getData" finished-at="2020-10-05T08:01:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=No selection in CourseraUsersCount, InstitutionStrength=1001-5000, CourseraUsersCount=___, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="19489" started-at="2020-10-05T08:01:42Z" data-provider="getData" finished-at="2020-10-05T08:02:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=No selection in Country, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=___, Country=___, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="formTest" duration-ms="13050" started-at="2020-10-05T08:02:02Z" data-provider="getData" finished-at="2020-10-05T08:02:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=No selection in State, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=___, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:TestCases.IdentifyCoursesTest@69ea3742]" name="quitBrowser" is-config="true" duration-ms="3864" started-at="2020-10-05T08:02:15Z" finished-at="2020-10-05T08:02:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- TestCases.IdentifyCoursesTest -->
-    </test> <!-- Identify Courses in Opera -->
-    <test name="Identify Courses in Chrome" duration-ms="503287" started-at="2020-10-05T07:54:54Z" finished-at="2020-10-05T08:03:17Z">
-      <class name="TestCases.IdentifyCoursesTest">
-        <test-method status="PASS" signature="searchTest(java.lang.String)[pri:0, instance:TestCases.IdentifyCoursesTest@239963d8]" name="searchTest" duration-ms="72945" started-at="2020-10-05T07:54:54Z" finished-at="2020-10-05T07:56:07Z">
+        </test-method> <!-- loadProperties -->
+        <test-method status="PASS" signature="searchTest(java.lang.String)[pri:0, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="searchTest" duration-ms="87578" started-at="2020-10-10T14:21:51Z" finished-at="2020-10-10T14:23:19Z">
           <params>
             <param index="0">
               <value>
@@ -483,7 +29,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="20750" started-at="2020-10-05T07:56:24Z" data-provider="getData" finished-at="2020-10-05T07:56:44Z">
+        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="9287" started-at="2020-10-10T14:23:19Z" data-provider="getData" finished-at="2020-10-10T14:23:28Z">
           <params>
             <param index="0">
               <value>
@@ -494,7 +40,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="16399" started-at="2020-10-05T07:56:44Z" data-provider="getData" finished-at="2020-10-05T07:57:01Z">
+        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="8190" started-at="2020-10-10T14:23:28Z" data-provider="getData" finished-at="2020-10-10T14:23:36Z">
           <params>
             <param index="0">
               <value>
@@ -505,7 +51,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="15997" started-at="2020-10-05T07:57:01Z" data-provider="getData" finished-at="2020-10-05T07:57:17Z">
+        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="7753" started-at="2020-10-10T14:23:36Z" data-provider="getData" finished-at="2020-10-10T14:23:44Z">
           <params>
             <param index="0">
               <value>
@@ -516,7 +62,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="16568" started-at="2020-10-05T07:57:17Z" data-provider="getData" finished-at="2020-10-05T07:57:33Z">
+        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="7701" started-at="2020-10-10T14:23:44Z" data-provider="getData" finished-at="2020-10-10T14:23:52Z">
           <params>
             <param index="0">
               <value>
@@ -527,7 +73,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="16557" started-at="2020-10-05T07:57:33Z" data-provider="getData" finished-at="2020-10-05T07:57:50Z">
+        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="7740" started-at="2020-10-10T14:23:52Z" data-provider="getData" finished-at="2020-10-10T14:23:59Z">
           <params>
             <param index="0">
               <value>
@@ -538,7 +84,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="12563" started-at="2020-10-05T07:57:50Z" data-provider="getData" finished-at="2020-10-05T07:58:02Z">
+        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="7683" started-at="2020-10-10T14:23:59Z" data-provider="getData" finished-at="2020-10-10T14:24:07Z">
           <params>
             <param index="0">
               <value>
@@ -549,7 +95,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="28055" started-at="2020-10-05T07:58:02Z" data-provider="getData" finished-at="2020-10-05T07:58:30Z">
+        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="13971" started-at="2020-10-10T14:24:07Z" data-provider="getData" finished-at="2020-10-10T14:24:21Z">
           <params>
             <param index="0">
               <value>
@@ -564,9 +110,9 @@ at java.lang.Thread.run(Thread.java:748)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
 at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
+at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:178)
+at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:131)
+at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:73)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -593,7 +139,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="29122" started-at="2020-10-05T07:58:30Z" data-provider="getData" finished-at="2020-10-05T07:59:00Z">
+        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="13174" started-at="2020-10-10T14:24:21Z" data-provider="getData" finished-at="2020-10-10T14:24:34Z">
           <params>
             <param index="0">
               <value>
@@ -608,10 +154,11 @@ at java.lang.Thread.run(Thread.java:748)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
 at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:178)
+at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:131)
+at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -636,7 +183,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="33995" started-at="2020-10-05T07:59:00Z" data-provider="getData" finished-at="2020-10-05T07:59:34Z">
+        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="13358" started-at="2020-10-10T14:24:34Z" data-provider="getData" finished-at="2020-10-10T14:24:48Z">
           <params>
             <param index="0">
               <value>
@@ -651,10 +198,11 @@ at java.lang.Thread.run(Thread.java:748)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
 at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:178)
+at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:131)
+at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -679,7 +227,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="93477" started-at="2020-10-05T07:59:34Z" data-provider="getData" finished-at="2020-10-05T08:01:07Z">
+        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="13196" started-at="2020-10-10T14:24:48Z" data-provider="getData" finished-at="2020-10-10T14:25:01Z">
           <params>
             <param index="0">
               <value>
@@ -694,10 +242,11 @@ at java.lang.Thread.run(Thread.java:748)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
 at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:178)
+at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:131)
+at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -722,7 +271,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="25262" started-at="2020-10-05T08:01:07Z" data-provider="getData" finished-at="2020-10-05T08:01:32Z">
+        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="14019" started-at="2020-10-10T14:25:01Z" data-provider="getData" finished-at="2020-10-10T14:25:15Z">
           <params>
             <param index="0">
               <value>
@@ -737,10 +286,11 @@ at java.lang.Thread.run(Thread.java:748)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
 at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:178)
+at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:131)
+at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -765,7 +315,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="20144" started-at="2020-10-05T08:01:32Z" data-provider="getData" finished-at="2020-10-05T08:01:52Z">
+        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="13015" started-at="2020-10-10T14:25:15Z" data-provider="getData" finished-at="2020-10-10T14:25:28Z">
           <params>
             <param index="0">
               <value>
@@ -780,10 +330,11 @@ at java.lang.Thread.run(Thread.java:748)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
 at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:178)
+at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:131)
+at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -808,7 +359,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="20643" started-at="2020-10-05T08:01:52Z" data-provider="getData" finished-at="2020-10-05T08:02:13Z">
+        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="20040" started-at="2020-10-10T14:25:28Z" data-provider="getData" finished-at="2020-10-10T14:25:48Z">
           <params>
             <param index="0">
               <value>
@@ -823,10 +374,11 @@ at java.lang.Thread.run(Thread.java:748)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
 at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:178)
+at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:131)
+at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
@@ -851,7 +403,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="10013" started-at="2020-10-05T08:02:13Z" data-provider="getData" finished-at="2020-10-05T08:02:23Z">
+        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="7584" started-at="2020-10-10T14:25:48Z" data-provider="getData" finished-at="2020-10-10T14:25:55Z">
           <params>
             <param index="0">
               <value>
@@ -862,7 +414,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="9368" started-at="2020-10-05T08:02:23Z" data-provider="getData" finished-at="2020-10-05T08:02:33Z">
+        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="7951" started-at="2020-10-10T14:25:55Z" data-provider="getData" finished-at="2020-10-10T14:26:03Z">
           <params>
             <param index="0">
               <value>
@@ -873,7 +425,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="9480" started-at="2020-10-05T08:02:33Z" data-provider="getData" finished-at="2020-10-05T08:02:42Z">
+        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="7627" started-at="2020-10-10T14:26:03Z" data-provider="getData" finished-at="2020-10-10T14:26:11Z">
           <params>
             <param index="0">
               <value>
@@ -884,7 +436,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="9918" started-at="2020-10-05T08:02:42Z" data-provider="getData" finished-at="2020-10-05T08:02:52Z">
+        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="8291" started-at="2020-10-10T14:26:11Z" data-provider="getData" finished-at="2020-10-10T14:26:19Z">
           <params>
             <param index="0">
               <value>
@@ -895,7 +447,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="14676" started-at="2020-10-05T08:02:52Z" data-provider="getData" finished-at="2020-10-05T08:03:07Z">
+        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="14468" started-at="2020-10-10T14:26:19Z" data-provider="getData" finished-at="2020-10-10T14:26:34Z">
           <params>
             <param index="0">
               <value>
@@ -906,7 +458,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@239963d8]" name="formTest" duration-ms="9377" started-at="2020-10-05T08:03:07Z" data-provider="getData" finished-at="2020-10-05T08:03:16Z">
+        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="formTest" duration-ms="7781" started-at="2020-10-10T14:26:34Z" data-provider="getData" finished-at="2020-10-10T14:26:42Z">
           <params>
             <param index="0">
               <value>
@@ -917,471 +469,15 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:TestCases.IdentifyCoursesTest@239963d8]" name="quitBrowser" is-config="true" duration-ms="1190" started-at="2020-10-05T08:03:16Z" finished-at="2020-10-05T08:03:17Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="quitBrowser" is-config="true" duration-ms="1038" started-at="2020-10-10T14:26:42Z" finished-at="2020-10-10T14:26:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- TestCases.IdentifyCoursesTest -->
-    </test> <!-- Identify Courses in Chrome -->
-    <test name="Identify Courses in Firefox" duration-ms="550167" started-at="2020-10-05T07:54:54Z" finished-at="2020-10-05T08:04:04Z">
-      <class name="TestCases.IdentifyCoursesTest">
-        <test-method status="PASS" signature="loadProperties()[pri:0, instance:TestCases.IdentifyCoursesTest@6adede5]" name="loadProperties" is-config="true" duration-ms="337" started-at="2020-10-05T07:54:54Z" finished-at="2020-10-05T07:54:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadProperties -->
-        <test-method status="PASS" signature="searchTest(java.lang.String)[pri:0, instance:TestCases.IdentifyCoursesTest@6adede5]" name="searchTest" duration-ms="109004" started-at="2020-10-05T07:54:54Z" finished-at="2020-10-05T07:56:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="21055" started-at="2020-10-05T07:56:43Z" data-provider="getData" finished-at="2020-10-05T07:57:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Empty FirstName, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=___, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="24828" started-at="2020-10-05T07:57:04Z" data-provider="getData" finished-at="2020-10-05T07:57:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Empty LastName, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=___, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="25617" started-at="2020-10-05T07:57:29Z" data-provider="getData" finished-at="2020-10-05T07:57:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Empty Email, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=___, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="21905" started-at="2020-10-05T07:57:55Z" data-provider="getData" finished-at="2020-10-05T07:58:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid Email, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=abcd, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="19797" started-at="2020-10-05T07:58:17Z" data-provider="getData" finished-at="2020-10-05T07:58:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Empty JobTitle, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=___, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="19489" started-at="2020-10-05T07:58:36Z" data-provider="getData" finished-at="2020-10-05T07:58:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Empty PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=___}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="74717" started-at="2020-10-05T07:58:56Z" data-provider="getData" finished-at="2020-10-05T08:00:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-65}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="17651" started-at="2020-10-05T08:00:11Z" data-provider="getData" finished-at="2020-10-05T08:00:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=((((}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="17453" started-at="2020-10-05T08:00:28Z" data-provider="getData" finished-at="2020-10-05T08:00:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=))))}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="18605" started-at="2020-10-05T08:00:46Z" data-provider="getData" finished-at="2020-10-05T08:01:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=98----}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="19194" started-at="2020-10-05T08:01:04Z" data-provider="getData" finished-at="2020-10-05T08:01:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=76++}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="19815" started-at="2020-10-05T08:01:23Z" data-provider="getData" finished-at="2020-10-05T08:01:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=54...}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="FAIL" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="17958" started-at="2020-10-05T08:01:43Z" data-provider="getData" finished-at="2020-10-05T08:02:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Invalid PhoneNo, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=(321)-+.}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message NOT displayed, which is a failure!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message NOT displayed, which is a failure!
-at org.testng.Assert.fail(Assert.java:96)
-at BaseClasses.BaseTestClass.reportFail(BaseTestClass.java:174)
-at PageClasses.CourseraForCampusPage.fillAndSubmitForm(CourseraForCampusPage.java:117)
-at TestCases.IdentifyCoursesTest.formTest(IdentifyCoursesTest.java:66)
-at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="20639" started-at="2020-10-05T08:02:01Z" data-provider="getData" finished-at="2020-10-05T08:02:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=Empty InstitutionName, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=___, FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="19202" started-at="2020-10-05T08:02:22Z" data-provider="getData" finished-at="2020-10-05T08:02:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=No selection in InstitutionType, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=___, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="16655" started-at="2020-10-05T08:02:41Z" data-provider="getData" finished-at="2020-10-05T08:02:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=No selection in InstitutionStrength, InstitutionStrength=___, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="16798" started-at="2020-10-05T08:02:58Z" data-provider="getData" finished-at="2020-10-05T08:03:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=No selection in CourseraUsersCount, InstitutionStrength=1001-5000, CourseraUsersCount=___, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=Tamil Nadu, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="19072" started-at="2020-10-05T08:03:15Z" data-provider="getData" finished-at="2020-10-05T08:03:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=No selection in Country, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=___, Country=___, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="formTest(java.util.Hashtable)[pri:1, instance:TestCases.IdentifyCoursesTest@6adede5]" name="formTest" duration-ms="25587" started-at="2020-10-05T08:03:34Z" data-provider="getData" finished-at="2020-10-05T08:03:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Comment=No selection in State, InstitutionStrength=1001-5000, CourseraUsersCount=1001-5000, InstitutionType=Government, Email=ab@cd.com, JobTitle=QAE, PageTitle=Coursera for Campus | Online Learning Platform for Universities, LastName=Kamenov, InstitutionName=xyz , FirstName=Viktor, State=___, Country=India, PhoneNo=987-654-3210}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formTest -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:TestCases.IdentifyCoursesTest@6adede5]" name="quitBrowser" is-config="true" duration-ms="4877" started-at="2020-10-05T08:03:59Z" finished-at="2020-10-05T08:04:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:TestCases.IdentifyCoursesTest@6adede5]" name="endReport" is-config="true" duration-ms="1276" started-at="2020-10-05T08:04:04Z" finished-at="2020-10-05T08:04:05Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:TestCases.IdentifyCoursesTest@1ce92674]" name="endReport" is-config="true" duration-ms="423" started-at="2020-10-10T14:26:43Z" finished-at="2020-10-10T14:26:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- TestCases.IdentifyCoursesTest -->
-    </test> <!-- Identify Courses in Firefox -->
+    </test> <!-- Identify Courses in Chrome -->
   </suite> <!-- Regression suite -->
 </testng-results>

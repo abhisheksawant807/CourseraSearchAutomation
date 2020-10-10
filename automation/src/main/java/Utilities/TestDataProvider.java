@@ -5,12 +5,10 @@ import java.util.Hashtable;
 public class TestDataProvider {
 
 	/************** To get the Data for TestCase ******************/
-	public static Object[][] getTestData(String DataFileName, String SheetName, String TestScenario) {
+	public static Object[][] getTestData(String DataFileName, String sheetName, String testScenario) {
 
-		ReadExcelDataFile readData = new ReadExcelDataFile(
-				System.getProperty("user.dir") + "/test-data/" + DataFileName);
-		String sheetName = SheetName;
-		String testScenario = TestScenario;
+		ExcelUtils readData = new ExcelUtils(
+				System.getProperty("user.dir") + "/test-data/" + DataFileName, sheetName);
 
 		// Find Start Row of TestScenario
 		int startRowNum = 0;
@@ -33,7 +31,7 @@ public class TestDataProvider {
 			colmns++;
 		}
 
-		// Define 2-D Object Array
+		// Defining 2-D Object Array
 		Object[][] dataSet = new Object[rows][1];
 		Hashtable<String, String> dataTable = null;
 		int dataRowNumber = 0;
@@ -42,9 +40,9 @@ public class TestDataProvider {
 			for (int colNumber = 0; colNumber < colmns; colNumber++) {
 				String key = readData.getCellData(sheetName, colNumber, startTestColumn);
 				String value = readData.getCellData(sheetName, colNumber, rowNumber);
-				dataTable.put(key, value);
+				dataTable.put(key, value); // Adding an entry in the hashtable
 			}
-			dataSet[dataRowNumber][0] = dataTable;
+			dataSet[dataRowNumber][0] = dataTable; // Adding the hashtable at the specified index
 			dataRowNumber++;
 		}
 		return dataSet;

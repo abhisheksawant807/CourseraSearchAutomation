@@ -10,12 +10,14 @@ import BaseClasses.PageBaseClass;
 
 public class ResultsPage extends PageBaseClass {
 
+	// Initialising the driver and logger by passing them to the parent constructor
 	public ResultsPage(WebDriver driver, ExtentTest logger) {
 		super(driver, logger);
 	}
 
 	public String dropDownButtonName;
 
+	// These @FindBy annotations are used to locate specific WebElements of specific webpages
 	@FindBy(className = "cif-chevron-down")
 	public WebElement exploreElement;
 
@@ -40,8 +42,9 @@ public class ResultsPage extends PageBaseClass {
 	public void selectEnglish() {
 		try {
 			dropDownButtonName = "Language Filter Dropdown Button";
-			elementClick(languageDropDownButton, dropDownButtonName);
-			elementClick(selectEnglishCheckbox, "English Language Checkbox");
+			// Clicking the specified elements
+			elementClick(languageDropDownButton, dropDownButtonName); 
+			elementClick(selectEnglishCheckbox, "English Language Checkbox"); 
 			elementClick(languageDropDownButton, dropDownButtonName);
 		} catch (Exception e) {
 			reportFail(e.getMessage());
@@ -61,21 +64,23 @@ public class ResultsPage extends PageBaseClass {
 
 	public CourseDetailsPage openCourseDetailsPage(int index) {
 		try {
-			String resultsPage = driver.getWindowHandle();
+			String resultsPage = driver.getWindowHandle(); // Initialising the current window handle
 			String coursePage = null;
 
-			waitForElements(courseList);
-			reportInfo("Opening course No." + index + " ...");
-			elementClick(courseList.get(index - 1), "Course No." + index);
+			waitForElements(courseList); // Wait for 'courseList' elements
+			reportInfo("Opening course No." + index + " ..."); // Logging the specific course no.
+			elementClick(courseList.get(index - 1), "Course No." + index); // Clicking the specific course
 
 			for (String handle : driver.getWindowHandles()) {
 				if (!handle.equals(resultsPage)) {
+					// Initialising the course page window handle 
 					coursePage = handle;
 					break;
 				}
 			}
-			switchToWindow(coursePage);
+			switchToWindow(coursePage); // Switching to course page window handle
 
+			// Passing the driver, logger, course index, and results page window handle to the object
 			CourseDetailsPage courseDetailsPage = new CourseDetailsPage(driver, logger, index, resultsPage);
 			PageFactory.initElements(driver, courseDetailsPage);
 			return courseDetailsPage;
@@ -87,10 +92,13 @@ public class ResultsPage extends PageBaseClass {
 
 	public LanguageLearningPage openLanguageLearningPage() {
 		try {
-			elementClick(exploreElement, "Explore drop down");
+			elementClick(exploreElement, "Explore drop down"); 
+			// Selecting the specified element
 			selectElementInList(exploreList, prop.getProperty("exploreListItem"));
 
+			// Verifying the page title
 			verifyPageTitle(prop.getProperty("languageLearningPageTitle"));
+			// Logging the successful page title verification
 			reportPass("Successfully opened 'Language Learning' page!");
 
 			LanguageLearningPage languageLearningPage = new LanguageLearningPage(driver, logger);
