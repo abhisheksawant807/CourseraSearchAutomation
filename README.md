@@ -6,7 +6,7 @@ This project automates the search of Web Dev courses in coursera, storing the va
 * Selenium WebDriver (Java)
 * Data-Driven Framework
 * POM (Page Object Model)
-* Utilities like DateUtils, ExtentReportManager, Read and write excel files, TestDataProvider etc.
+* Utilities like DateUtils, ExtentReportManager, ExcelUtils (I/O), TestDataProvider etc.
 * Properties file (to store global properties)
 * Exception handling
 * HTML report generation and logging using reporting methods
