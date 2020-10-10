@@ -1,5 +1,5 @@
 # CourseraSearchAutomation
-This project automates the search of Web Dev courses in coursera, storing the various languages and levels, and finally capturing the error messages by filling invalid inputs in 'Ready to Transform' form. (Manual testing file included with all the scenarios, test cases, bug report and RTM)
+This project automates the process of searching Web Dev courses in coursera, storing the various languages and levels, and finally capturing the error messages by filling invalid inputs in 'Ready to Transform' form. (Manual testing file included with all the scenarios, test cases, bug report and RTM)
 
 #Technologies used:-
 
